@@ -42,8 +42,14 @@ Weight decay: 0.1x to 10x
 Batch size: 64 or 128
 The hyperparameter tuning is carried out to find the best combination of hyperparameters that maximizes the model's performance.
 
+![Alt text](https://github.com/mohelwah/Dog-Breed-Image-Classification/blob/main/photos/training_jop.PNG)
+
+![Alt text](https://github.com/mohelwah/Dog-Breed-Image-Classification/blob/main/photos/hyperparmeter_jop.PNG)
 
 ## Debugging and Profiling
+
+![Alt text](https://github.com/mohelwah/Dog-Breed-Image-Classification/blob/main/photos/Capture.PNG)
+
 If the debugging output shows fluctuations and inconsistencies between batches, it may indicate a lack of convergence or overfitting. In such cases, regularization techniques such as dropout or weight decay could be applied to prevent overfitting. Alternatively, the batch shuffling technique can be used to ensure that the training data is presented in a random order for each epoch, preventing the model from memorizing the training data's order. Additionally, trying out different neural network architectures, such as increasing the number of layers or changing the activation functions, could also improve model performance.
 
 ### Results
@@ -54,4 +60,5 @@ The profiler report can be found ./profiler_repot/profiler-output/profiler-repor
 We deployed the model on a "ml.t2.medium" instance type, and to set up and deploy our working endpoint, we used the "endpoint_inference.py" script. For testing purposes, we stored a few test images in the "testImages" folder. We used the following approaches for inference:
 
 1- Using the Predictor Object
+![Alt text](https://github.com/mohelwah/Dog-Breed-Image-Classification/blob/main/photos/endpoint.PNG)
 
